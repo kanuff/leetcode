@@ -1,5 +1,6 @@
 
 class Solution:
+    # weirdly slow, don't really like the nested loop
     def longestCommonPrefix(self, strs: List[str]) -> str:
         if not strs: return ""
         strs.sort(key = len)
